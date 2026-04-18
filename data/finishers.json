@@ -680,5 +680,1019 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Triangle_choke.jpeg"
     },
     "tags": ["柔術", "絞め技", "逆転"]
+  },
+  {
+    "id": "db-special-beam-cannon",
+    "rank": 32,
+    "name": "魔貫光殺砲",
+    "series": "ドラゴンボール",
+    "character": "ピッコロ",
+    "category": "anime",
+    "genre": "beam",
+    "score": 67,
+    "coolness_score": 91,
+    "impact_score": 92,
+    "iconic_score": 89,
+    "description": "指先に殺気を絞り込み、一直線の貫通力で勝負を刺しに行く鋭い光線技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/dragonball/images/8/85/PiccoloSpecialBeamCannonK.png/revision/latest?cb=20250327065301",
+      "alt": "魔貫光殺砲を構えるピッコロの場面",
+      "credit": "Dragon Ball Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://dragonball.fandom.com/wiki/Special_Beam_Cannon"
+    },
+    "tags": [
+      "貫通光線",
+      "ピッコロ",
+      "集中"
+    ]
+  },
+  {
+    "id": "naruto-rasenshuriken",
+    "rank": 33,
+    "name": "螺旋手裏剣",
+    "series": "NARUTO",
+    "character": "うずまきナルト",
+    "category": "anime",
+    "genre": "special",
+    "score": 66,
+    "coolness_score": 90,
+    "impact_score": 93,
+    "iconic_score": 88,
+    "description": "渦巻くチャクラを手裏剣の形に研ぎ上げ、接触した瞬間に嵐のような削りを刻む大技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/naruto/images/5/52/F%C5%ABton_Rasenshuriken.png/revision/latest?cb=20220118210921",
+      "alt": "螺旋手裏剣を放つナルトの場面",
+      "credit": "Narutopedia / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://naruto.fandom.com/wiki/Wind_Release:_Rasenshuriken"
+    },
+    "tags": [
+      "風遁",
+      "螺旋",
+      "ナルト"
+    ]
+  },
+  {
+    "id": "onepiece-red-hawk",
+    "rank": 34,
+    "name": "ゴムゴムのレッドホーク",
+    "series": "ONE PIECE",
+    "character": "モンキー・D・ルフィ",
+    "category": "anime",
+    "genre": "punch",
+    "score": 66,
+    "coolness_score": 92,
+    "impact_score": 90,
+    "iconic_score": 88,
+    "description": "燃える拳に記憶と怒りを乗せ、一直線の打撃で相手を吹き飛ばす熱い一撃。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/onepiece/images/3/33/Gomu_Gomu_no_Red_Hawk.gif/revision/latest?cb=20121003022412",
+      "alt": "レッドホークを打ち込むルフィの場面",
+      "credit": "One Piece Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi/Gear_2_Techniques"
+    },
+    "tags": [
+      "炎の拳",
+      "ルフィ",
+      "兄弟"
+    ]
+  },
+  {
+    "id": "bleach-tensa-zangetsu",
+    "rank": 35,
+    "name": "天鎖斬月",
+    "series": "BLEACH",
+    "character": "黒崎一護",
+    "category": "anime",
+    "genre": "slash",
+    "score": 65,
+    "coolness_score": 89,
+    "impact_score": 88,
+    "iconic_score": 90,
+    "description": "黒い刀身に速度と霊圧を凝縮し、短い軌道で戦況を断ち切る卍解の象徴。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/bleach/images/f/f4/Ep308IchigoBankaiTensaZangetsu.png/revision/latest?cb=20220928175546&path-prefix=en",
+      "alt": "天鎖斬月を発動した一護の場面",
+      "credit": "Bleach Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://bleach.fandom.com/wiki/Ichigo_Kurosaki"
+    },
+    "tags": [
+      "卍解",
+      "斬月",
+      "高速"
+    ]
+  },
+  {
+    "id": "demon-thunderclap-flash",
+    "rank": 36,
+    "name": "雷の呼吸 壱ノ型 霹靂一閃",
+    "series": "鬼滅の刃",
+    "character": "我妻善逸",
+    "category": "anime",
+    "genre": "slash",
+    "score": 64,
+    "coolness_score": 91,
+    "impact_score": 86,
+    "iconic_score": 89,
+    "description": "抜刀の瞬間だけ世界が止まるように見える、雷鳴じみた速度で間合いを消す剣技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/9b/Zenitsu_using_Thunderclap_and_Flash_on_Tongue_Demon.gif/revision/latest?cb=20250503061000",
+      "alt": "霹靂一閃で踏み込む善逸の場面",
+      "credit": "Kimetsu no Yaiba Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://kimetsu-no-yaiba.fandom.com/wiki/Thunder_Breathing"
+    },
+    "tags": [
+      "雷の呼吸",
+      "抜刀",
+      "善逸"
+    ]
+  },
+  {
+    "id": "jjk-hollow-purple",
+    "rank": 37,
+    "name": "虚式「茈」",
+    "series": "呪術廻戦",
+    "character": "五条悟",
+    "category": "anime",
+    "genre": "beam",
+    "score": 64,
+    "coolness_score": 93,
+    "impact_score": 94,
+    "iconic_score": 87,
+    "description": "引力と斥力の矛盾を一つに重ね、触れたものを空間ごと押し潰すように消す術式。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/9/9c/Hollow_Purple_%28Anime%29.gif/revision/latest?cb=20210226204734",
+      "alt": "虚式「茈」を放つ五条悟の場面",
+      "credit": "Jujutsu Kaisen Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://jujutsu-kaisen.fandom.com/wiki/Hollow_Technique:_Purple"
+    },
+    "tags": [
+      "無下限",
+      "五条悟",
+      "虚式"
+    ]
+  },
+  {
+    "id": "db-destructo-disc",
+    "rank": 38,
+    "name": "気円斬",
+    "series": "ドラゴンボール",
+    "character": "クリリン",
+    "category": "anime",
+    "genre": "slash",
+    "score": 63,
+    "coolness_score": 84,
+    "impact_score": 90,
+    "iconic_score": 86,
+    "description": "薄く研いだ気の円盤を投げ放ち、格上相手にも首筋が冷える切断力を見せる技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/dragonball/images/d/d3/KrillinDestructoDiskEarth.png/revision/latest?cb=20180411033016",
+      "alt": "気円斬を構えるクリリンの場面",
+      "credit": "Dragon Ball Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://dragonball.fandom.com/wiki/Destructo_Disc"
+    },
+    "tags": [
+      "気の円盤",
+      "切断",
+      "クリリン"
+    ]
+  },
+  {
+    "id": "naruto-susanoo",
+    "rank": 39,
+    "name": "須佐能乎",
+    "series": "NARUTO",
+    "character": "うちはサスケ",
+    "category": "anime",
+    "genre": "transformation",
+    "score": 62,
+    "coolness_score": 92,
+    "impact_score": 91,
+    "iconic_score": 84,
+    "description": "巨大な守護者を纏うように顕現させ、防御も攻撃も一段上の迫力へ押し上げる瞳術。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/naruto/images/2/2b/Susanoo.png/revision/latest?cb=20150207103348",
+      "alt": "須佐能乎を展開した写輪眼の力の場面",
+      "credit": "Narutopedia / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://naruto.fandom.com/wiki/Susanoo"
+    },
+    "tags": [
+      "写輪眼",
+      "巨人",
+      "防御"
+    ]
+  },
+  {
+    "id": "onepiece-onigiri",
+    "rank": 40,
+    "name": "鬼斬り",
+    "series": "ONE PIECE",
+    "character": "ロロノア・ゾロ",
+    "category": "anime",
+    "genre": "slash",
+    "score": 62,
+    "coolness_score": 86,
+    "impact_score": 84,
+    "iconic_score": 88,
+    "description": "三本の刃を交差させて突き抜け、名前どおり鬼をも断つ気迫で正面を破る剣技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/onepiece/images/8/8c/Oni_Giri.png/revision/latest?cb=20230202023603",
+      "alt": "鬼斬りを放つゾロの場面",
+      "credit": "One Piece Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+    },
+    "tags": [
+      "三刀流",
+      "ゾロ",
+      "斬撃"
+    ]
+  },
+  {
+    "id": "bleach-cero",
+    "rank": 41,
+    "name": "虚閃",
+    "series": "BLEACH",
+    "character": "破面",
+    "category": "anime",
+    "genre": "beam",
+    "score": 61,
+    "coolness_score": 83,
+    "impact_score": 88,
+    "iconic_score": 85,
+    "description": "虚の霊圧を一点に濃縮し、赤い破壊光として戦場を横切らせる荒々しい砲撃。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/bleach/images/b/bb/Cero.gif/revision/latest?cb=20250324112655&path-prefix=en",
+      "alt": "虚閃を放つ破面の場面",
+      "credit": "Bleach Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://bleach.fandom.com/wiki/Cero"
+    },
+    "tags": [
+      "虚",
+      "霊圧",
+      "赤い光"
+    ]
+  },
+  {
+    "id": "demon-hinokami-retsujitsu",
+    "rank": 42,
+    "name": "ヒノカミ神楽 烈日紅鏡",
+    "series": "鬼滅の刃",
+    "character": "竈門炭治郎",
+    "category": "anime",
+    "genre": "slash",
+    "score": 60,
+    "coolness_score": 88,
+    "impact_score": 84,
+    "iconic_score": 82,
+    "description": "炎の輪郭を帯びた連続斬りで相手の守りを削り、視界まで赤く染める舞の剣技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f7/Hinokami_Kagura_-_Raging_Sun.png/revision/latest?cb=20200407031633",
+      "alt": "ヒノカミ神楽・烈日紅鏡の斬撃場面",
+      "credit": "Kimetsu no Yaiba Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://kimetsu-no-yaiba.fandom.com/wiki/Hinokami_Kagura"
+    },
+    "tags": [
+      "ヒノカミ神楽",
+      "炎舞",
+      "炭治郎"
+    ]
+  },
+  {
+    "id": "mha-detroit-smash",
+    "rank": 43,
+    "name": "デトロイトスマッシュ",
+    "series": "僕のヒーローアカデミア",
+    "character": "緑谷出久",
+    "category": "anime",
+    "genre": "punch",
+    "score": 60,
+    "coolness_score": 85,
+    "impact_score": 89,
+    "iconic_score": 87,
+    "description": "拳の一振りに継承された力を乗せ、風圧まで武器に変える直球のヒーロー技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/bokunoheroacademia/images/1/1d/Deku_uses_Detroit_Smash.gif/revision/latest?cb=20250618040745",
+      "alt": "デトロイトスマッシュを放つデクの場面",
+      "credit": "My Hero Academia Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://myheroacademia.fandom.com/wiki/Detroit_Smash"
+    },
+    "tags": [
+      "スマッシュ",
+      "継承",
+      "拳"
+    ]
+  },
+  {
+    "id": "db-solar-flare",
+    "rank": 44,
+    "name": "太陽拳",
+    "series": "ドラゴンボール",
+    "character": "天津飯",
+    "category": "anime",
+    "genre": "special",
+    "score": 59,
+    "coolness_score": 76,
+    "impact_score": 82,
+    "iconic_score": 90,
+    "description": "真正面からまばゆい光を叩きつけ、実力差を一瞬だけ作戦の余白に変える目くらまし。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/dragonball/images/e/eb/The_Tree_of_Might_-_Solar_Flare.png/revision/latest?cb=20250116004050",
+      "alt": "太陽拳のまばゆい光を放つ場面",
+      "credit": "Dragon Ball Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://dragonball.fandom.com/wiki/Solar_Flare"
+    },
+    "tags": [
+      "閃光",
+      "撹乱",
+      "天津飯"
+    ]
+  },
+  {
+    "id": "naruto-kamui",
+    "rank": 45,
+    "name": "神威",
+    "series": "NARUTO",
+    "character": "はたけカカシ",
+    "category": "anime",
+    "genre": "special",
+    "score": 58,
+    "coolness_score": 90,
+    "impact_score": 88,
+    "iconic_score": 83,
+    "description": "視線の先の空間をねじ曲げ、攻撃も防御も別次元へ送る反則級の時空間忍術。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/naruto/images/6/6a/Obito%27s_kamui.png/revision/latest?cb=20160819164838",
+      "alt": "神威で空間を歪ませる場面",
+      "credit": "Narutopedia / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://naruto.fandom.com/wiki/Kamui"
+    },
+    "tags": [
+      "時空間",
+      "写輪眼",
+      "カカシ"
+    ]
+  },
+  {
+    "id": "onepiece-diable-jambe",
+    "rank": 46,
+    "name": "ディアブルジャンブ",
+    "series": "ONE PIECE",
+    "character": "サンジ",
+    "category": "anime",
+    "genre": "kick",
+    "score": 58,
+    "coolness_score": 88,
+    "impact_score": 86,
+    "iconic_score": 84,
+    "description": "脚に熱を纏わせて蹴り抜き、料理人らしい美学と荒さを同じ火力で叩き込む技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/onepiece/images/d/d9/Diable_Jambe.png/revision/latest?cb=20230916202858",
+      "alt": "ディアブルジャンブで蹴るサンジの場面",
+      "credit": "One Piece Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://onepiece.fandom.com/wiki/Black_Leg_Style/Diable_Jambe"
+    },
+    "tags": [
+      "黒足",
+      "炎の蹴り",
+      "サンジ"
+    ]
+  },
+  {
+    "id": "bleach-kyoka-suigetsu",
+    "rank": 47,
+    "name": "鏡花水月",
+    "series": "BLEACH",
+    "character": "藍染惣右介",
+    "category": "anime",
+    "genre": "special",
+    "score": 57,
+    "coolness_score": 87,
+    "impact_score": 86,
+    "iconic_score": 89,
+    "description": "見た瞬間に感覚の足場を奪い、相手の確信そのものを罠に変える静かな支配の斬魄刀。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/bleach/images/6/62/Ep60Ky%C5%8DkaSuigetsu.png/revision/latest?cb=20210413212813&path-prefix=en",
+      "alt": "鏡花水月を見せる藍染惣右介の場面",
+      "credit": "Bleach Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://bleach.fandom.com/wiki/Sousuke_Aizen"
+    },
+    "tags": [
+      "催眠",
+      "藍染",
+      "錯覚"
+    ]
+  },
+  {
+    "id": "demon-constant-flux",
+    "rank": 48,
+    "name": "水の呼吸 拾ノ型 生生流転",
+    "series": "鬼滅の刃",
+    "character": "竈門炭治郎",
+    "category": "anime",
+    "genre": "slash",
+    "score": 56,
+    "coolness_score": 84,
+    "impact_score": 84,
+    "iconic_score": 80,
+    "description": "斬撃を重ねるほど水流の龍が勢いを増し、粘り強く相手を追い詰める型。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/70/Constant_Flux.png/revision/latest?cb=20200406055142",
+      "alt": "生生流転の水流をまとった斬撃場面",
+      "credit": "Kimetsu no Yaiba Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://kimetsu-no-yaiba.fandom.com/wiki/Water_Breathing"
+    },
+    "tags": [
+      "水の呼吸",
+      "龍",
+      "連撃"
+    ]
+  },
+  {
+    "id": "jjk-maximum-uzumaki",
+    "rank": 49,
+    "name": "極ノ番「うずまき」",
+    "series": "呪術廻戦",
+    "character": "夏油傑",
+    "category": "anime",
+    "genre": "special",
+    "score": 56,
+    "coolness_score": 86,
+    "impact_score": 88,
+    "iconic_score": 81,
+    "description": "取り込んだ呪霊の圧を一つの渦へまとめ、数の暴力を凝縮弾に変える切り札。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/b/b2/Geto%27s_Uzumaki_%28Anime%29.gif/revision/latest?cb=20221127024255",
+      "alt": "極ノ番「うずまき」を放つ夏油の場面",
+      "credit": "Jujutsu Kaisen Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://jujutsu-kaisen.fandom.com/wiki/Maximum:_Uzumaki"
+    },
+    "tags": [
+      "呪霊操術",
+      "渦",
+      "夏油"
+    ]
+  },
+  {
+    "id": "db-big-bang-attack",
+    "rank": 50,
+    "name": "ビッグバンアタック",
+    "series": "ドラゴンボール",
+    "character": "ベジータ",
+    "category": "anime",
+    "genre": "beam",
+    "score": 55,
+    "coolness_score": 87,
+    "impact_score": 89,
+    "iconic_score": 84,
+    "description": "片手に王子の自信を集め、巨大な光弾で相手をまとめて消し飛ばす豪快な砲撃。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/dragonball/images/b/b6/BigBangAttackVegeta.png/revision/latest?cb=20250401190204",
+      "alt": "ビッグバンアタックを構えるベジータの場面",
+      "credit": "Dragon Ball Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://dragonball.fandom.com/wiki/Big_Bang_Attack"
+    },
+    "tags": [
+      "ベジータ",
+      "光弾",
+      "王子"
+    ]
+  },
+  {
+    "id": "mha-one-for-all-100",
+    "rank": 51,
+    "name": "ワン・フォー・オール 100%",
+    "series": "僕のヒーローアカデミア",
+    "character": "緑谷出久",
+    "category": "anime",
+    "genre": "transformation",
+    "score": 54,
+    "coolness_score": 86,
+    "impact_score": 90,
+    "iconic_score": 82,
+    "description": "肉体の限界を越える出力を引き出し、一歩ごとに戦場の空気を震わせる全力形態。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/bokunoheroacademia/images/8/80/One_For_All_Full_Cowl_-_100%25_%28Anime%29.png/revision/latest?cb=20251016031709",
+      "alt": "ワン・フォー・オール100%を発動するデクの場面",
+      "credit": "My Hero Academia Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://myheroacademia.fandom.com/wiki/Full_Cowl_-_100%25"
+    },
+    "tags": [
+      "OFA",
+      "全力",
+      "出久"
+    ]
+  },
+  {
+    "id": "demon-moon-breathing",
+    "rank": 52,
+    "name": "月の呼吸",
+    "series": "鬼滅の刃",
+    "character": "黒死牟",
+    "category": "anime",
+    "genre": "slash",
+    "score": 54,
+    "coolness_score": 88,
+    "impact_score": 85,
+    "iconic_score": 78,
+    "description": "月片のような刃を斬撃に散らし、避けたはずの空間まで危険に変える異形の呼吸。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/81/Kimetsu_no_Yaiba_CH168.png/revision/latest?cb=20190729162819",
+      "alt": "月の呼吸の斬撃演出",
+      "credit": "Kimetsu no Yaiba Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://kimetsu-no-yaiba.fandom.com/wiki/Moon_Breathing"
+    },
+    "tags": [
+      "月の呼吸",
+      "黒死牟",
+      "斬撃"
+    ]
+  },
+  {
+    "id": "naruto-leaf-whirlwind",
+    "rank": 53,
+    "name": "木ノ葉旋風",
+    "series": "NARUTO",
+    "character": "ロック・リー",
+    "category": "anime",
+    "genre": "kick",
+    "score": 53,
+    "coolness_score": 80,
+    "impact_score": 78,
+    "iconic_score": 84,
+    "description": "低い姿勢から回転の蹴りを重ね、体術だけで相手のリズムを崩す木ノ葉流の基本技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/naruto/images/7/7f/Leaf_Whirlwind.png/revision/latest?cb=20150121174411",
+      "alt": "木ノ葉旋風の蹴りを放つ場面",
+      "credit": "Narutopedia / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://naruto.fandom.com/wiki/Leaf_Whirlwind"
+    },
+    "tags": [
+      "体術",
+      "木ノ葉",
+      "蹴り"
+    ]
+  },
+  {
+    "id": "jjk-simple-domain",
+    "rank": 54,
+    "name": "簡易領域",
+    "series": "呪術廻戦",
+    "character": "三輪霞",
+    "category": "anime",
+    "genre": "special",
+    "score": 52,
+    "coolness_score": 78,
+    "impact_score": 82,
+    "iconic_score": 80,
+    "description": "小さな安全圏を足元に作り、必中の理不尽へ最低限の答えを返す対領域の技術。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/f/f4/Simple_Domain_%28Anime%29.gif/revision/latest?cb=20240616015958",
+      "alt": "簡易領域を展開する場面",
+      "credit": "Jujutsu Kaisen Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://jujutsu-kaisen.fandom.com/wiki/Simple_Domain"
+    },
+    "tags": [
+      "領域対策",
+      "結界",
+      "防御"
+    ]
+  },
+  {
+    "id": "bleach-kanzen-saimin",
+    "rank": 55,
+    "name": "完全催眠",
+    "series": "BLEACH",
+    "character": "藍染惣右介",
+    "category": "anime",
+    "genre": "special",
+    "score": 52,
+    "coolness_score": 86,
+    "impact_score": 85,
+    "iconic_score": 87,
+    "description": "五感すべてに偽の現実を流し込み、敵の判断を根元から書き換える恐ろしい能力。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/bleach/images/4/4a/Ep60AizenHoldsCorpse.png/revision/latest?cb=20210413212706&path-prefix=en",
+      "alt": "完全催眠で相手を惑わせる藍染の場面",
+      "credit": "Bleach Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://bleach.fandom.com/wiki/Kanzen_Saimin"
+    },
+    "tags": [
+      "五感支配",
+      "藍染",
+      "幻惑"
+    ]
+  },
+  {
+    "id": "pokemon-hyper-beam",
+    "rank": 56,
+    "name": "はかいこうせん",
+    "series": "ポケットモンスター",
+    "character": "ポケモン",
+    "category": "game",
+    "genre": "beam",
+    "score": 51,
+    "coolness_score": 82,
+    "impact_score": 90,
+    "iconic_score": 90,
+    "description": "反動を覚悟で巨大な光線を放ち、最後の押し込みに重みを持たせる定番の大技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/pokemon/images/e/e7/Hyper_Beam_SV.jpg/revision/latest?cb=20240214065204",
+      "alt": "はかいこうせんの発射場面",
+      "credit": "Pokémon Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://pokemon.fandom.com/wiki/Hyper_Beam"
+    },
+    "tags": [
+      "ノーマル技",
+      "反動",
+      "光線"
+    ]
+  },
+  {
+    "id": "sf-shun-goku-satsu",
+    "rank": 57,
+    "name": "瞬獄殺",
+    "series": "Street Fighter",
+    "character": "豪鬼",
+    "category": "game",
+    "genre": "special",
+    "score": 50,
+    "coolness_score": 93,
+    "impact_score": 89,
+    "iconic_score": 92,
+    "description": "暗転の一瞬に無数の打撃を叩き込み、背中の文字だけで決着を語らせる必殺演出。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/streetfighter/images/3/36/SGS_%28SSF2T%29.jpg/revision/latest?cb=20120325001622",
+      "alt": "瞬獄殺の演出場面",
+      "credit": "Street Fighter Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://streetfighter.fandom.com/wiki/Shun_Goku_Satsu"
+    },
+    "tags": [
+      "豪鬼",
+      "暗転",
+      "殺意"
+    ]
+  },
+  {
+    "id": "pokemon-thunderbolt",
+    "rank": 58,
+    "name": "10まんボルト",
+    "series": "ポケットモンスター",
+    "character": "ピカチュウ",
+    "category": "game",
+    "genre": "beam",
+    "score": 50,
+    "coolness_score": 78,
+    "impact_score": 82,
+    "iconic_score": 93,
+    "description": "明るい電撃を相手へ走らせ、軽快さと決定力を両立するポケモンらしい看板技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/pokemon/images/4/4b/Thunderbolt_VIII.png/revision/latest?cb=20200509154847",
+      "alt": "10まんボルトを放つ場面",
+      "credit": "Pokémon Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://pokemon.fandom.com/wiki/Thunderbolt"
+    },
+    "tags": [
+      "でんき技",
+      "ピカチュウ",
+      "電撃"
+    ]
+  },
+  {
+    "id": "ff7-omnislash",
+    "rank": 59,
+    "name": "超究武神覇斬",
+    "series": "FINAL FANTASY VII",
+    "character": "クラウド・ストライフ",
+    "category": "game",
+    "genre": "slash",
+    "score": 49,
+    "coolness_score": 91,
+    "impact_score": 88,
+    "iconic_score": 86,
+    "description": "連続斬撃を畳みかけて最後に大きく断ち切る、リミット技らしい高揚感の塊。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/finalfantasy/images/e/ee/FFVII_Limit_Break_Cloud_Omnislash.jpg/revision/latest?cb=20080919144716",
+      "alt": "クラウドが超究武神覇斬を放つ場面",
+      "credit": "Final Fantasy Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://finalfantasy.fandom.com/wiki/Omnislash_(Final_Fantasy_VII)"
+    },
+    "tags": [
+      "リミット技",
+      "クラウド",
+      "連斬"
+    ]
+  },
+  {
+    "id": "sf-sonic-boom",
+    "rank": 60,
+    "name": "ソニックブーム",
+    "series": "Street Fighter",
+    "character": "ガイル",
+    "category": "game",
+    "genre": "beam",
+    "score": 48,
+    "coolness_score": 77,
+    "impact_score": 76,
+    "iconic_score": 91,
+    "description": "両腕の振りから衝撃波を飛ばし、待ちの間合いそのものを武器に変える飛び道具。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/streetfighter/images/5/51/Guile-turbofix.jpg/revision/latest?cb=20100612195317",
+      "alt": "ガイルのソニックブーム演出",
+      "credit": "Street Fighter Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://streetfighter.fandom.com/wiki/Sonic_Boom"
+    },
+    "tags": [
+      "ガイル",
+      "衝撃波",
+      "溜め技"
+    ]
+  },
+  {
+    "id": "smash-falcon-punch",
+    "rank": 61,
+    "name": "ファルコンパンチ",
+    "series": "大乱闘スマッシュブラザーズ",
+    "character": "キャプテン・ファルコン",
+    "category": "game",
+    "genre": "punch",
+    "score": 48,
+    "coolness_score": 85,
+    "impact_score": 86,
+    "iconic_score": 90,
+    "description": "大きな予備動作のあとに拳を爆発させ、当たれば会場の空気まで変えるロマン技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/ssb/images/e/e3/CaptainFalconSSBWU3DS2.jpg/revision/latest?cb=20140714142225",
+      "alt": "キャプテン・ファルコンの攻撃場面",
+      "credit": "Smashpedia / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://supersmashbros.fandom.com/wiki/Falcon_Punch"
+    },
+    "tags": [
+      "スマブラ",
+      "ロマン",
+      "拳"
+    ]
+  },
+  {
+    "id": "pokemon-fire-blast",
+    "rank": 62,
+    "name": "だいもんじ",
+    "series": "ポケットモンスター",
+    "character": "ほのおタイプのポケモン",
+    "category": "game",
+    "genre": "beam",
+    "score": 47,
+    "coolness_score": 79,
+    "impact_score": 84,
+    "iconic_score": 88,
+    "description": "大の字に広がる炎で画面を焼き、命中した瞬間の派手さが記憶に残る炎技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/pokemon/images/c/c2/Fire_Blast_I.png/revision/latest?cb=20190511211611",
+      "alt": "だいもんじの炎技演出",
+      "credit": "Pokémon Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://pokemon.fandom.com/wiki/Fire_Blast"
+    },
+    "tags": [
+      "ほのお技",
+      "大文字",
+      "高火力"
+    ]
+  },
+  {
+    "id": "sf-messatsu-gohado",
+    "rank": 63,
+    "name": "滅殺豪波動",
+    "series": "Street Fighter",
+    "character": "豪鬼",
+    "category": "game",
+    "genre": "beam",
+    "score": 46,
+    "coolness_score": 88,
+    "impact_score": 84,
+    "iconic_score": 84,
+    "description": "殺意の波動を大きな塊にして放ち、豪鬼の存在感を遠距離から押し付ける超必殺技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/streetfighter/images/b/bb/Messatsu_Gohado_T7.gif/revision/latest?cb=20241105233904",
+      "alt": "滅殺豪波動の暗い波動演出",
+      "credit": "Street Fighter Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://streetfighter.fandom.com/wiki/Messatsu_Gohado"
+    },
+    "tags": [
+      "豪鬼",
+      "波動",
+      "超必殺"
+    ]
+  },
+  {
+    "id": "kamen-rider-dragon-rider-kick",
+    "rank": 64,
+    "name": "ドラゴンライダーキック",
+    "series": "仮面ライダー龍騎",
+    "character": "城戸真司",
+    "category": "tokusatsu",
+    "genre": "kick",
+    "score": 46,
+    "coolness_score": 88,
+    "impact_score": 90,
+    "iconic_score": 82,
+    "description": "契約モンスターの炎を背に受け、カードバトルの決着を蹴りで宣言する龍騎らしい必殺技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/kamenrider/images/a/ac/Dragon_Rider_Kick.png/revision/latest?cb=20231217040716",
+      "alt": "ドラゴンライダーキックの場面",
+      "credit": "Kamen Rider Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://kamenrider.fandom.com/wiki/Final_Vent_(finisher)"
+    },
+    "tags": [
+      "龍騎",
+      "ファイナルベント",
+      "炎"
+    ]
+  },
+  {
+    "id": "kamen-rider-rider-punch",
+    "rank": 65,
+    "name": "ライダーパンチ",
+    "series": "仮面ライダー",
+    "character": "本郷猛",
+    "category": "tokusatsu",
+    "genre": "punch",
+    "score": 45,
+    "coolness_score": 80,
+    "impact_score": 82,
+    "iconic_score": 86,
+    "description": "跳躍や構えの勢いを拳に乗せ、昭和ヒーローの肉体感をまっすぐ伝える打撃技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/kamenrider/images/1/19/Ichigo%27s_First_Rider_Punch.png/revision/latest?cb=20251026215850",
+      "alt": "ライダーパンチを放つ仮面ライダー1号の場面",
+      "credit": "Kamen Rider Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://kamenrider.fandom.com/wiki/Rider_Punch"
+    },
+    "tags": [
+      "昭和ライダー",
+      "拳",
+      "本郷猛"
+    ]
+  },
+  {
+    "id": "ultraman-emerium-ray",
+    "rank": 66,
+    "name": "エメリウム光線",
+    "series": "ウルトラセブン",
+    "character": "ウルトラセブン",
+    "category": "tokusatsu",
+    "genre": "beam",
+    "score": 44,
+    "coolness_score": 82,
+    "impact_score": 84,
+    "iconic_score": 90,
+    "description": "額のビームランプから放つ細い光が、セブンの冷静な強さを一瞬で示す光線技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/ultra/images/a/a9/EmeriumRaySeven.gif/revision/latest?cb=20201216142031",
+      "alt": "エメリウム光線を放つウルトラセブンの場面",
+      "credit": "Ultraman Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://ultra.fandom.com/wiki/Emerium"
+    },
+    "tags": [
+      "ウルトラセブン",
+      "額光線",
+      "昭和特撮"
+    ]
+  },
+  {
+    "id": "kamen-rider-zero-one-rising-impact",
+    "rank": 67,
+    "name": "ライジングインパクト",
+    "series": "仮面ライダーゼロワン",
+    "character": "飛電或人",
+    "category": "tokusatsu",
+    "genre": "kick",
+    "score": 44,
+    "coolness_score": 86,
+    "impact_score": 86,
+    "iconic_score": 78,
+    "description": "プログライズキーの電子音と黄色い軌跡を重ね、令和一号の勢いを蹴りで刻む必殺技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/kamenrider/images/0/07/Rising_Impact_Part_1.png/revision/latest?cb=20191019235838",
+      "alt": "ライジングインパクトを放つゼロワンの場面",
+      "credit": "Kamen Rider Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://kamenrider.fandom.com/wiki/Finisher_(Zero-One)"
+    },
+    "tags": [
+      "ゼロワン",
+      "令和ライダー",
+      "キック"
+    ]
+  },
+  {
+    "id": "combat-german-suplex",
+    "rank": 68,
+    "name": "ジャーマンスープレックス",
+    "series": "プロレス",
+    "character": "プロレスラー",
+    "category": "combat_sports",
+    "genre": "throw",
+    "score": 43,
+    "coolness_score": 78,
+    "impact_score": 86,
+    "iconic_score": 74,
+    "description": "背後から腰を抱えて弧を描くように投げ、ブリッジまで含めて美しさが残る投げ技。",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Takaaki_Watanabe_german_suplex.jpg/960px-Takaaki_Watanabe_german_suplex.jpg",
+      "alt": "ジャーマンスープレックスを決めるプロレスラー",
+      "credit": "Tabercil / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Takaaki_Watanabe_german_suplex.jpg"
+    },
+    "tags": [
+      "プロレス",
+      "投げ技",
+      "ブリッジ"
+    ]
+  },
+  {
+    "id": "combat-high-kick",
+    "rank": 69,
+    "name": "回し蹴り（ハイキック）",
+    "series": "格闘技",
+    "character": "空手家",
+    "category": "combat_sports",
+    "genre": "kick",
+    "score": 42,
+    "coolness_score": 76,
+    "impact_score": 84,
+    "iconic_score": 70,
+    "description": "腰の回転を頭部の高さまで運び、当たる直前の軌道だけで緊張感を生む蹴り技。",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Mawashi_roundhouse_retouch.jpg",
+      "alt": "回し蹴りのフォームを示す武道家",
+      "credit": "Teraforming / Wikimedia Commons",
+      "license": "CC0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mawashi_roundhouse_retouch.jpg"
+    },
+    "tags": [
+      "打撃",
+      "蹴り技",
+      "頭部狙い"
+    ]
+  },
+  {
+    "id": "combat-dropkick",
+    "rank": 70,
+    "name": "ドロップキック",
+    "series": "プロレス",
+    "character": "プロレスラー",
+    "category": "combat_sports",
+    "genre": "kick",
+    "score": 40,
+    "coolness_score": 77,
+    "impact_score": 83,
+    "iconic_score": 76,
+    "description": "両足を揃えて空中から突き刺さる、見た目の派手さと受け身の技術が噛み合う飛び技。",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Okada_Dropkick.jpg/960px-Okada_Dropkick.jpg",
+      "alt": "ドロップキックを放つプロレスラー",
+      "credit": "ゾーヒョー / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Okada_Dropkick.jpg"
+    },
+    "tags": [
+      "プロレス",
+      "飛び技",
+      "両足蹴り"
+    ]
   }
 ]
