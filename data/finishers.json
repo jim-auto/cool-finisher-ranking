@@ -12,6 +12,13 @@
     "impact_score": 99,
     "iconic_score": 100,
     "description": "両手に気を集めて放つ、必殺技の代名詞ともいえる青い一撃。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/dragonball/images/e/e7/Goku_DBZ_Ep_31_008.png/revision/latest?cb=20170828193815",
+      "alt": "孫悟空がかめはめ波を放つ場面",
+      "credit": "Dragon Ball Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://dragonball.fandom.com/wiki/Kamehameha"
+    },
     "tags": ["気功波", "主人公", "超定番"]
   },
   {
@@ -27,6 +34,13 @@
     "impact_score": 96,
     "iconic_score": 98,
     "description": "圧縮したチャクラを掌で叩き込む、成長と継承を感じる近距離技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/naruto/images/2/28/Rasengan.png/revision/latest?cb=20250401003710",
+      "alt": "うずまきナルトが螺旋丸を叩き込む場面",
+      "credit": "Narutopedia / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://naruto.fandom.com/wiki/Rasengan"
+    },
     "tags": ["チャクラ", "継承", "接近戦"]
   },
   {
@@ -42,6 +56,13 @@
     "impact_score": 95,
     "iconic_score": 96,
     "description": "斬撃の圧力を月牙のように飛ばす、黒と白の映える看板技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/bleach/images/1/16/GetsugaTensh%C5%8D.gif/revision/latest?cb=20221119185354&path-prefix=en",
+      "alt": "黒崎一護が斬月を振り抜いて月牙天衝を放つ場面",
+      "credit": "Bleach Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://bleach.fandom.com/wiki/Getsuga_Tensh%C5%8D"
+    },
     "tags": ["斬撃", "死神", "主人公"]
   },
   {
@@ -57,6 +78,13 @@
     "impact_score": 96,
     "iconic_score": 97,
     "description": "空中から一直線に決める、変身ヒーローの歴史を背負った必殺キック。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/kamenrider/images/9/9b/Ichigo%27s_First_Rider_Kick.png/revision/latest?cb=20251026211044",
+      "alt": "初代仮面ライダーがショッカー怪人にライダーキックを叩き込む場面",
+      "credit": "Kamen Rider Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://kamenrider.fandom.com/wiki/Rider_Kick"
+    },
     "tags": ["変身ヒーロー", "キック", "決めポーズ"]
   },
   {
@@ -72,6 +100,13 @@
     "impact_score": 94,
     "iconic_score": 98,
     "description": "腕を十字に組んで放つ、巨大ヒーローを象徴するフィニッシュ光線。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/ultra/images/f/f8/ULTRAMAN-BEAM.jpg/revision/latest?cb=20160326212843",
+      "alt": "ウルトラマンが両腕を十字に組みスペシウム光線を放つ瞬間",
+      "credit": "Ultraman Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://ultra.fandom.com/wiki/Spacium"
+    },
     "tags": ["光線", "巨大ヒーロー", "古典"]
   },
   {
@@ -87,6 +122,13 @@
     "impact_score": 95,
     "iconic_score": 86,
     "description": "情報の奔流で相手を止める、圧倒的な格上感を見せる領域技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/46/Unlimited_Void.gif/revision/latest?cb=20201114063332",
+      "alt": "五条悟が領域展開『無量空処』を発動する場面",
+      "credit": "Jujutsu Kaisen Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://jujutsu-kaisen.fandom.com/wiki/Unlimited_Void"
+    },
     "tags": ["領域展開", "最強感", "制圧"]
   },
   {
@@ -102,6 +144,13 @@
     "impact_score": 96,
     "iconic_score": 86,
     "description": "巨大化した拳を叩き込む、反撃の勢いまで伝わる豪快な一発。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/onepiece/images/4/4b/Gomu_Gomu_no_King_Kong_Gun.png/revision/latest?cb=20160320044647",
+      "alt": "モンキー・D・ルフィがゴムゴムの猿王銃を繰り出す場面",
+      "credit": "One Piece Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://onepiece.fandom.com/wiki/Gomu_Gomu_no_Mi/Gear_4_Techniques"
+    },
     "tags": ["拳", "ギア", "大技"]
   },
   {
@@ -117,6 +166,13 @@
     "impact_score": 90,
     "iconic_score": 94,
     "description": "上昇しながら拳を突き上げる、格闘ゲームの対空技を代表する一撃。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/streetfighter/images/8/8c/SF1_Ryu_defeating_Sagat.jpg/revision/latest?cb=20260121051219",
+      "alt": "リュウが昇龍拳でサガットを打ち上げる伝説の一撃",
+      "credit": "Street Fighter Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://streetfighter.fandom.com/wiki/Shoryuken"
+    },
     "tags": ["対空", "格闘ゲーム", "コマンド技"]
   },
   {
@@ -132,6 +188,13 @@
     "impact_score": 91,
     "iconic_score": 84,
     "description": "相手を爪のように刻み続ける、荒々しさと妖しさが同居した乱舞技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/snk/images/6/6c/Iori_Yaotome_Start_XV.png/revision/latest?cb=20230307164158",
+      "alt": "八神庵が禁千弐百拾壱式・八稚女を発動する瞬間",
+      "credit": "SNK Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://snk.fandom.com/wiki/Kin_1211_Shiki_Ya_Otome"
+    },
     "tags": ["乱舞", "炎", "ライバル"]
   },
   {
@@ -147,6 +210,13 @@
     "impact_score": 98,
     "iconic_score": 82,
     "description": "周囲のエネルギーを集める、逆転劇に似合う巨大な希望の弾。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/dragonball/images/5/53/Goku_DBZ_Ep_93_007.png/revision/latest?cb=20171021004959",
+      "alt": "孫悟空が両手を掲げて元気玉を作り出す場面",
+      "credit": "Dragon Ball Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://dragonball.fandom.com/wiki/Spirit_Bomb"
+    },
     "tags": ["大技", "逆転", "エネルギー"]
   },
   {
@@ -162,6 +232,13 @@
     "impact_score": 88,
     "iconic_score": 82,
     "description": "雷をまとった突進で一点を貫く、鋭さが際立つ暗殺型の技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/naruto/images/5/50/Sasuke%27s_chidori.png/revision/latest?cb=20220118071928",
+      "alt": "うちはサスケが千鳥を放ち突撃する場面",
+      "credit": "Narutopedia / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://naruto.fandom.com/wiki/Chidori"
+    },
     "tags": ["雷", "ライバル", "突進"]
   },
   {
@@ -177,6 +254,13 @@
     "impact_score": 86,
     "iconic_score": 77,
     "description": "無数の刃が花びらのように舞う、優雅さと危険さを両立した卍解。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/bleach/images/b/b3/SenbonzakuraKageyoshi240.gif/revision/latest?cb=20170115054443&path-prefix=en",
+      "alt": "朽木白哉が千本桜景厳を展開し桜の刃が舞う場面",
+      "credit": "Bleach Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://bleach.fandom.com/wiki/Senbonzakura_(Zanpakut%C5%8D_spirit)"
+    },
     "tags": ["卍解", "斬撃", "美しい"]
   },
   {
@@ -192,6 +276,13 @@
     "impact_score": 84,
     "iconic_score": 82,
     "description": "三刀流の回転と気迫で押し切る、剣士らしい直球の決め技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/onepiece/images/e/e2/Santoryu_Ogi_Sanzen_Sekai.png/revision/latest?cb=20220818010325",
+      "alt": "ロロノア・ゾロが三刀流奥義『三・千・世・界』を放つ場面",
+      "credit": "One Piece Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://onepiece.fandom.com/wiki/Three_Sword_Style"
+    },
     "tags": ["三刀流", "剣技", "気迫"]
   },
   {
@@ -207,6 +298,13 @@
     "impact_score": 82,
     "iconic_score": 90,
     "description": "両手から気を放つ、格闘ゲームの読み合いを作る基本にして名技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/streetfighter/images/1/14/SF1-Hadoken.png/revision/latest?cb=20200418223715",
+      "alt": "リュウが両掌から波動拳を放つ象徴的な構図",
+      "credit": "Street Fighter Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://streetfighter.fandom.com/wiki/Hadoken"
+    },
     "tags": ["飛び道具", "格闘ゲーム", "定番"]
   },
   {
@@ -222,6 +320,13 @@
     "impact_score": 82,
     "iconic_score": 82,
     "description": "高速の連続蹴りで畳みかける、華やかさと勢いのある突進技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/snk/images/8/8c/Hou%27ou_no_Mai_2000.gif/revision/latest?cb=20220925193029",
+      "alt": "不知火舞が炎をまとい鳳凰脚で突進する場面",
+      "credit": "SNK Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://snk.fandom.com/wiki/Houou_no_Mai"
+    },
     "tags": ["連続技", "蹴り", "突進"]
   },
   {
@@ -237,6 +342,13 @@
     "impact_score": 84,
     "iconic_score": 70,
     "description": "赤い軌跡とロックオン演出が映える、静かに熱い必殺キック。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/kamenrider/images/d/dd/Crimson_Smash.png/revision/latest?cb=20251018155900",
+      "alt": "仮面ライダーファイズが深紅のエネルギードリルでクリムゾンスマッシュを撃ち放つ場面",
+      "credit": "Kamen Rider Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://kamenrider.fandom.com/wiki/Exceed_Charge"
+    },
     "tags": ["ライダー", "光跡", "キック"]
   },
   {
@@ -252,6 +364,13 @@
     "impact_score": 82,
     "iconic_score": 78,
     "description": "構えから発射までの流れが美しい、新世代感のある光線技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/ultra/images/3/38/UltramanTiga.png/revision/latest?cb=20220104172825",
+      "alt": "ゼペリオン光線の使い手、ウルトラマンティガ マルチタイプの勇姿",
+      "credit": "Ultraman Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://ultra.fandom.com/wiki/Ultraman_Tiga_(character)"
+    },
     "tags": ["光線", "ティガ", "決め技"]
   },
   {
@@ -289,6 +408,13 @@
     "impact_score": 84,
     "iconic_score": 70,
     "description": "打撃と呪力が噛み合った瞬間に走る、黒い火花のクリティカル技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/d/d6/Yuji_using_Black_Flash_%28Anime%29.gif/revision/latest?cb=20210219201924",
+      "alt": "虎杖悠仁が拳に黒閃を宿して打ち込む場面",
+      "credit": "Jujutsu Kaisen Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://jujutsu-kaisen.fandom.com/wiki/Black_Flash"
+    },
     "tags": ["打撃", "呪力", "会心"]
   },
   {
@@ -304,6 +430,13 @@
     "impact_score": 84,
     "iconic_score": 62,
     "description": "両手から放つ高出力の気功波で、プライドごと撃ち抜くような迫力がある。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/dragonball/images/3/3f/Z2-1-1.jpg/revision/latest?cb=20180506173607",
+      "alt": "ベジータがファイナルフラッシュを放つ場面",
+      "credit": "Dragon Ball Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://dragonball.fandom.com/wiki/Final_Flash"
+    },
     "tags": ["気功波", "ライバル", "高火力"]
   },
   {
@@ -319,6 +452,13 @@
     "impact_score": 80,
     "iconic_score": 65,
     "description": "黒い炎で対象を焼く、静かな恐ろしさが残る瞳術。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/naruto/images/e/e0/Amaterasu.png/revision/latest?cb=20151203010730",
+      "alt": "うちはイタチが天照の黒炎で対象を燃やす場面",
+      "credit": "Narutopedia / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://naruto.fandom.com/wiki/Amaterasu"
+    },
     "tags": ["炎", "瞳術", "黒"]
   },
   {
@@ -334,6 +474,13 @@
     "impact_score": 80,
     "iconic_score": 56,
     "description": "黒い箱で閉じ込めて押し潰す、詠唱込みで威圧感の強い鬼道。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/bleach/images/8/80/Kurohitsugi.gif/revision/latest?cb=20160304195411&path-prefix=en",
+      "alt": "藍染惣右介が破道九十『黒棺』を放ち敵を封じ込める場面",
+      "credit": "Bleach Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://bleach.fandom.com/wiki/Kurohitsugi"
+    },
     "tags": ["鬼道", "詠唱", "制圧"]
   },
   {
@@ -349,6 +496,13 @@
     "impact_score": 83,
     "iconic_score": 55,
     "description": "一瞬で勝負を傾ける、達人の余裕と鋭さが見える斬撃。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/onepiece/images/a/a8/Shanks_Defeats_Kid.png/revision/latest?cb=20250811025846",
+      "alt": "シャンクスが神避でキッドを一撃で斬り伏せる場面",
+      "credit": "One Piece Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://onepiece.fandom.com/wiki/Gryphon"
+    },
     "tags": ["覇気", "斬撃", "達人"]
   },
   {
@@ -364,6 +518,13 @@
     "impact_score": 78,
     "iconic_score": 65,
     "description": "波動拳をさらに圧縮した、ここぞという場面のスーパーコンボ。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/streetfighter/images/7/7b/Epic_Super_Clash_Episode_7.jpg/revision/latest?cb=20120117191032",
+      "alt": "リュウが真空波動拳で巨大な気の奔流を放つ場面",
+      "credit": "Street Fighter Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://streetfighter.fandom.com/wiki/Shinku_Hadoken"
+    },
     "tags": ["スーパーコンボ", "飛び道具", "集中"]
   },
   {
@@ -379,6 +540,13 @@
     "impact_score": 76,
     "iconic_score": 58,
     "description": "地面から気を噴き上げる、ボスらしい威圧感を持つカウンター気味の大技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/snk/images/f/fc/KOF_XV_Geese_Raging_Storm.png/revision/latest?cb=20230126151252",
+      "alt": "ギース・ハワードがレイジングストームで気の嵐を巻き起こす一撃",
+      "credit": "SNK Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://snk.fandom.com/wiki/Raging_Storm"
+    },
     "tags": ["ボス", "気", "高難度"]
   },
   {
@@ -394,6 +562,13 @@
     "impact_score": 74,
     "iconic_score": 53,
     "description": "超高速の世界へ入る、静止した空間を切り裂くような強化アクション。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/kamenrider/images/4/42/DCD_Kabuto_ClockUp.png/revision/latest?cb=20170401094254",
+      "alt": "仮面ライダーカブトがクロックアップで超高速戦闘に突入する場面",
+      "credit": "Kamen Rider Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://kamenrider.fandom.com/wiki/Clock_Up"
+    },
     "tags": ["高速", "ライダー", "強化"]
   },
   {
@@ -409,6 +584,13 @@
     "impact_score": 78,
     "iconic_score": 60,
     "description": "高威力の光線として語られる、切り札感の強いフィニッシュ技。",
+    "image": {
+      "url": "https://static.wikia.nocookie.net/ultra/images/c/ca/Zoffy_M87_Beam.jpg/revision/latest?cb=20130608020056",
+      "alt": "M87光線が放たれる象徴的なシーン",
+      "credit": "Ultraman Wiki / Fandom",
+      "license": "Fair Use / Fandom Wiki",
+      "source_url": "https://ultra.fandom.com/wiki/M87_Beam"
+    },
     "tags": ["光線", "高威力", "切り札"]
   },
   {
