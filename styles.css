@@ -226,6 +226,105 @@ select:focus {
   transform: translateY(-3px);
 }
 
+.card-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  margin: 0 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  background: #0b0e15;
+}
+
+.card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-media figcaption {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  overflow: hidden;
+  padding: 4px 7px;
+  border-radius: 4px;
+  background: rgba(8, 9, 13, 0.74);
+  color: #d8e3f4;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-media a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-media a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.fallback-media {
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.fallback-media::before {
+  content: "";
+  position: absolute;
+  inset: -36px;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 28% 52%, rgba(246, 189, 60, 0.24), transparent 22%),
+    repeating-linear-gradient(118deg, transparent 0 17px, rgba(255, 255, 255, 0.18) 18px 20px, transparent 21px 54px);
+  transform: rotate(-7deg);
+}
+
+.fallback-symbol {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.42rem;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.fallback-text {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.genre-beam {
+  background: linear-gradient(135deg, rgba(51, 168, 255, 0.36), rgba(255, 51, 78, 0.18)), #0b1220;
+}
+
+.genre-slash {
+  background: linear-gradient(135deg, rgba(246, 189, 60, 0.34), rgba(255, 255, 255, 0.08)), #13110b;
+}
+
+.genre-punch {
+  background: linear-gradient(135deg, rgba(255, 51, 78, 0.38), rgba(246, 189, 60, 0.14)), #160c0e;
+}
+
+.genre-kick {
+  background: linear-gradient(135deg, rgba(75, 209, 123, 0.28), rgba(51, 168, 255, 0.2)), #071410;
+}
+
+.genre-special,
+.genre-transformation,
+.genre-grappling,
+.genre-throw {
+  background: linear-gradient(135deg, rgba(246, 189, 60, 0.24), rgba(51, 168, 255, 0.24), rgba(255, 51, 78, 0.2)), #101018;
+}
+
 .card-top {
   display: flex;
   align-items: start;

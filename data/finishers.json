@@ -267,6 +267,13 @@
     "impact_score": 82,
     "iconic_score": 71,
     "description": "引き込んで叩きつけるように放つ、試合の空気を変えるラリアット系の技。",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Kazuchika_Okada_Rainmaker.jpg/960px-Kazuchika_Okada_Rainmaker.jpg",
+      "alt": "オカダ・カズチカがレインメーカーを放つ場面",
+      "credit": "Tabercil / Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kazuchika_Okada_Rainmaker.jpg"
+    },
     "tags": ["プロレス", "ラリアット", "決着"]
   },
   {
@@ -417,6 +424,13 @@
     "impact_score": 72,
     "iconic_score": 55,
     "description": "相手の膝を踏み台にして側頭部を狙う、発想まで華やかな膝蹴り。",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Knee_strike-Honour_Combat_Championships_Nov._27-2009.jpg/960px-Knee_strike-Honour_Combat_Championships_Nov._27-2009.jpg",
+      "alt": "膝蹴り系の技を決める参考画像",
+      "credit": "MartialArtsNomad.com / Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Knee_strike-Honour_Combat_Championships_Nov._27-2009.jpg"
+    },
     "tags": ["プロレス", "膝蹴り", "華麗"]
   },
   {
@@ -432,6 +446,13 @@
     "impact_score": 84,
     "iconic_score": 48,
     "description": "突進から腕を振り抜く、シンプルだからこそ破壊力が伝わる一撃。",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Elbow_Lariat.jpg",
+      "alt": "ラリアット系の攻撃を放つプロレスの場面",
+      "credit": "Academy Catch Wrestling Events / Wikimedia Commons",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Elbow_Lariat.jpg"
+    },
     "tags": ["プロレス", "突進", "剛腕"]
   },
   {
@@ -447,6 +468,13 @@
     "impact_score": 80,
     "iconic_score": 55,
     "description": "腕を極めて勝負を終わらせる、現実の緊張感が強いサブミッション。",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/MCMAP_grappling_armbar.jpg/960px-MCMAP_grappling_armbar.jpg",
+      "alt": "腕ひしぎ十字固めに近いアームバーの参考画像",
+      "credit": "U.S. Navy / Wikimedia Commons",
+      "license": "Public Domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MCMAP_grappling_armbar.jpg"
+    },
     "tags": ["関節技", "寝技", "一本"]
   },
   {
@@ -462,6 +490,13 @@
     "impact_score": 78,
     "iconic_score": 56,
     "description": "脚で相手を捕らえて絞め上げる、逆転の匂いがある寝技の決め技。",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Triangle_choke.jpeg/960px-Triangle_choke.jpeg",
+      "alt": "三角絞めを完成させた参考画像",
+      "credit": "Zoran.jerkovic / Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Triangle_choke.jpeg"
+    },
     "tags": ["柔術", "絞め技", "逆転"]
   }
 ]

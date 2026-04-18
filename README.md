@@ -53,11 +53,20 @@ python -m http.server 8000
   "impact_score": 99,
   "iconic_score": 100,
   "description": "短いオリジナル説明文",
+  "image": {
+    "url": "https://example.com/image.jpg",
+    "alt": "画像の説明",
+    "credit": "Author / Source",
+    "license": "CC BY 2.0",
+    "source_url": "https://example.com/source"
+  },
   "tags": ["タグ1", "タグ2"]
 }
 ```
 
 `id` は重複しない英数字ベースの文字列にしてください。説明文は短くオリジナルにまとめ、作品本文や公式説明の長い引用は避けます。
+
+画像を追加する場合は、ライセンス確認済みの画像だけを使います。特にアニメ、ゲーム、特撮の本編カットや公式画像は無断転載になりやすいため、許諾や利用条件が確認できないものは `image` に入れないでください。画像がないデータはジャンル別の抽象ビジュアルで表示されます。
 
 詳しいデータ仕様は [docs/schema.md](docs/schema.md) を参照してください。
 

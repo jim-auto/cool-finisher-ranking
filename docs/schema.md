@@ -18,6 +18,13 @@
   "impact_score": 99,
   "iconic_score": 100,
   "description": "両手に気を集めて放つ、必殺技の代名詞ともいえる青い一撃。",
+  "image": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/example.jpg?width=900",
+    "alt": "画像の説明",
+    "credit": "Author / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Example.jpg"
+  },
   "tags": ["気功波", "主人公", "超定番"]
 }
 ```
@@ -38,7 +45,20 @@
 | `impact_score` | number | yes | 演出、破壊力、試合展開への影響などの内訳スコア。0 から 100 を推奨します。 |
 | `iconic_score` | number | yes | 知名度や象徴性の内訳スコア。0 から 100 を推奨します。 |
 | `description` | string | yes | 一覧カードに表示する短い説明文。オリジナル文で簡潔に書きます。 |
+| `image` | object | no | 画像表示用の任意フィールド。ライセンス確認済み画像だけに使います。 |
 | `tags` | string[] | yes | 表示用タグ。検索対象にはしていませんが、将来のタグ検索に使えます。 |
+
+## image フィールド
+
+`image` は任意です。設定しない場合、カードにはジャンル別の抽象ビジュアルが表示されます。
+
+| フィールド | 型 | 必須 | 説明 |
+| --- | --- | --- | --- |
+| `url` | string | yes | 表示する画像 URL。Wikimedia Commons など、利用条件を確認できるURLを推奨します。 |
+| `alt` | string | yes | 画像の代替テキスト。画像が何を表しているかを書きます。 |
+| `credit` | string | yes | 作者名や提供元。カード上のクレジットに表示されます。 |
+| `license` | string | yes | ライセンス名。例: `Public Domain`, `CC BY 2.0`, `CC BY-SA 4.0`。 |
+| `source_url` | string | yes | ライセンスや出典を確認できるページの URL。 |
 
 ## category の運用
 
@@ -76,6 +96,8 @@ MVP では次の値を使っています。
 - `rank` は整数を推奨する。
 - スコア系の値は 0 から 100 の範囲にする。
 - `description` は短く、公式文や他サイト本文のコピーを避ける。
+- `image` を追加する場合は、出典、作者、ライセンスを確認する。
+- アニメ、ゲーム、特撮の本編カットや公式画像は、許諾が確認できない限り使わない。
 - `tags` は 2 から 5 個程度に抑える。
 - データを追加したら JSON と画面表示を確認する。
 

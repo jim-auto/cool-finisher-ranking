@@ -108,8 +108,23 @@ function normalizeFinishers(finishers) {
       coolness_score: Number(finisher.coolness_score) || 0,
       impact_score: Number(finisher.impact_score) || 0,
       iconic_score: Number(finisher.iconic_score) || 0,
+      image: normalizeImage(finisher.image),
       tags: Array.isArray(finisher.tags) ? finisher.tags : []
     }));
+}
+
+function normalizeImage(image) {
+  if (!image || !image.url) {
+    return null;
+  }
+
+  return {
+    url: String(image.url),
+    alt: String(image.alt || ""),
+    credit: String(image.credit || ""),
+    license: String(image.license || ""),
+    source_url: String(image.source_url || image.url)
+  };
 }
 
 function populateFilters(finishers) {
@@ -193,6 +208,7 @@ function createFinisherCard(finisher) {
   article.className = "finisher-card";
 
   article.innerHTML = `
+    ${createFinisherMedia(finisher)}
     <div class="card-top">
       <div class="rank-badge"><span>RANK</span>${escapeHtml(finisher.rank)}</div>
       <div class="score-badge"><span>SCORE</span>${escapeHtml(finisher.score)}</div>
@@ -230,6 +246,28 @@ function createFinisherCard(finisher) {
   return article;
 }
 
+function createFinisherMedia(finisher) {
+  if (finisher.image) {
+    const creditText = [finisher.image.credit, finisher.image.license].filter(Boolean).join(" / ");
+
+    return `
+      <figure class="card-media has-image">
+        <img src="${escapeHtml(finisher.image.url)}" alt="${escapeHtml(finisher.image.alt)}" loading="lazy">
+        <figcaption>
+          <a href="${escapeHtml(finisher.image.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(creditText)}</a>
+        </figcaption>
+      </figure>
+    `;
+  }
+
+  return `
+    <div class="card-media fallback-media genre-${escapeHtml(getSafeClassName(finisher.genre))}" aria-hidden="true">
+      <span class="fallback-symbol">${escapeHtml(getGenreSymbol(finisher.genre))}</span>
+      <span class="fallback-text">${escapeHtml(genreLabels[finisher.genre] || finisher.genre)}</span>
+    </div>
+  `;
+}
+
 function createScoreRow(label, score) {
   const safeScore = Math.max(0, Math.min(100, Number(score) || 0));
 
@@ -248,6 +286,25 @@ function normalizeText(value) {
 
 function getDisplayLabel(value) {
   return categoryLabels[value] || genreLabels[value] || value;
+}
+
+function getGenreSymbol(genre) {
+  const symbols = {
+    beam: "BEAM",
+    slash: "SLASH",
+    punch: "PUNCH",
+    kick: "KICK",
+    transformation: "FORM",
+    grappling: "LOCK",
+    throw: "THROW",
+    special: "SPECIAL"
+  };
+
+  return symbols[genre] || "FINISH";
+}
+
+function getSafeClassName(value) {
+  return String(value || "unknown").replace(/[^a-z0-9_-]/gi, "-").toLowerCase();
 }
 
 function escapeHtml(value) {
