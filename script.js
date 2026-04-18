@@ -77,15 +77,22 @@ const genreDefaultImages = {
   }
 };
 
-const state = {
-  finishers: [],
+const DEFAULTS = {
   searchText: "",
   category: "all",
   genre: "all",
-  sort: "score-desc"
+  sort: "score-desc",
+  tag: ""
+};
+
+const state = {
+  finishers: [],
+  ...DEFAULTS,
+  detailId: null
 };
 
 const elements = {};
+let suppressHashUpdate = false;
 
 document.addEventListener("DOMContentLoaded", () => {
   bindElements();
@@ -99,40 +106,66 @@ function bindElements() {
   elements.categoryFilter = document.querySelector("#category-filter");
   elements.genreFilter = document.querySelector("#genre-filter");
   elements.sortSelect = document.querySelector("#sort-select");
+  elements.randomButton = document.querySelector("#random-button");
+  elements.tagChip = document.querySelector("#tag-chip");
+  elements.tagChipLabel = document.querySelector("#tag-chip-label");
+  elements.tagChipClear = document.querySelector("#tag-chip-clear");
   elements.rankingList = document.querySelector("#ranking-list");
   elements.emptyState = document.querySelector("#empty-state");
   elements.resultSummary = document.querySelector("#result-summary");
+  elements.listView = document.querySelector("#list-view");
+  elements.detailView = document.querySelector("#detail-view");
 }
 
 function bindEvents() {
   elements.searchInput.addEventListener("input", (event) => {
     state.searchText = event.target.value;
     render();
+    updateHash(true);
   });
 
   elements.categoryFilter.addEventListener("change", (event) => {
     state.category = event.target.value;
     render();
+    updateHash();
   });
 
   elements.genreFilter.addEventListener("change", (event) => {
     state.genre = event.target.value;
     render();
+    updateHash();
   });
 
   elements.sortSelect.addEventListener("change", (event) => {
     state.sort = event.target.value;
     render();
+    updateHash();
   });
 
   elements.form.addEventListener("reset", () => {
     window.setTimeout(() => {
-      state.searchText = "";
-      state.category = "all";
-      state.genre = "all";
-      state.sort = "score-desc";
+      Object.assign(state, DEFAULTS);
+      syncControls();
       render();
+      updateHash();
     }, 0);
+  });
+
+  elements.randomButton.addEventListener("click", () => {
+    pickRandom();
+  });
+
+  elements.tagChipClear.addEventListener("click", () => {
+    state.tag = "";
+    render();
+    updateHash();
+  });
+
+  window.addEventListener("hashchange", () => {
+    if (suppressHashUpdate) return;
+    applyHashToState();
+    syncControls();
+    render();
   });
 }
 
@@ -147,6 +180,8 @@ async function loadFinishers() {
     const finishers = await response.json();
     state.finishers = normalizeFinishers(finishers);
     populateFilters(state.finishers);
+    applyHashToState();
+    syncControls();
     render();
   } catch (error) {
     console.error(error);
@@ -209,7 +244,79 @@ function appendOptions(selectElement, values, labels) {
   });
 }
 
+function applyHashToState() {
+  const hash = window.location.hash.replace(/^#/, "");
+
+  if (hash.startsWith("/f/")) {
+    state.detailId = decodeURIComponent(hash.slice(3));
+    return;
+  }
+
+  state.detailId = null;
+  const params = new URLSearchParams(hash);
+  state.searchText = params.get("q") || DEFAULTS.searchText;
+  state.category = params.get("cat") || DEFAULTS.category;
+  state.genre = params.get("genre") || DEFAULTS.genre;
+  state.sort = params.get("sort") || DEFAULTS.sort;
+  state.tag = params.get("tag") || DEFAULTS.tag;
+}
+
+function serializeHash() {
+  if (state.detailId) {
+    return `#/f/${encodeURIComponent(state.detailId)}`;
+  }
+
+  const params = new URLSearchParams();
+  if (state.searchText) params.set("q", state.searchText);
+  if (state.category !== DEFAULTS.category) params.set("cat", state.category);
+  if (state.genre !== DEFAULTS.genre) params.set("genre", state.genre);
+  if (state.sort !== DEFAULTS.sort) params.set("sort", state.sort);
+  if (state.tag) params.set("tag", state.tag);
+
+  const str = params.toString();
+  return str ? `#${str}` : "";
+}
+
+function updateHash(replace = false) {
+  const newHash = serializeHash();
+  const currentHash = window.location.hash;
+  if (newHash === currentHash || (newHash === "" && currentHash === "")) return;
+
+  suppressHashUpdate = true;
+  const url = newHash || window.location.pathname + window.location.search;
+  if (replace) {
+    window.history.replaceState(null, "", url);
+  } else {
+    window.history.pushState(null, "", url);
+  }
+  window.setTimeout(() => { suppressHashUpdate = false; }, 0);
+}
+
+function syncControls() {
+  if (elements.searchInput.value !== state.searchText) {
+    elements.searchInput.value = state.searchText;
+  }
+  elements.categoryFilter.value = state.category;
+  elements.genreFilter.value = state.genre;
+  elements.sortSelect.value = state.sort;
+
+  if (state.tag) {
+    elements.tagChip.hidden = false;
+    elements.tagChipLabel.textContent = state.tag;
+  } else {
+    elements.tagChip.hidden = true;
+  }
+}
+
 function render() {
+  if (state.detailId) {
+    renderDetail();
+    return;
+  }
+
+  elements.detailView.hidden = true;
+  elements.listView.hidden = false;
+
   const filtered = getFilteredFinishers();
   const sorted = sortFinishers(filtered);
 
@@ -230,13 +337,14 @@ function getFilteredFinishers() {
   return state.finishers.filter((finisher) => {
     const matchesCategory = state.category === "all" || finisher.category === state.category;
     const matchesGenre = state.genre === "all" || finisher.genre === state.genre;
+    const matchesTag = !state.tag || (finisher.tags && finisher.tags.includes(state.tag));
     const matchesSearch =
       !normalizedSearch ||
       [finisher.name, finisher.series, finisher.character]
         .map(normalizeText)
         .some((value) => value.includes(normalizedSearch));
 
-    return matchesCategory && matchesGenre && matchesSearch;
+    return matchesCategory && matchesGenre && matchesTag && matchesSearch;
   });
 }
 
@@ -265,6 +373,7 @@ function sortFinishers(finishers) {
 function createFinisherCard(finisher) {
   const article = document.createElement("article");
   article.className = "finisher-card";
+  article.dataset.id = finisher.id;
 
   article.innerHTML = `
     ${createFinisherMedia(finisher)}
@@ -272,7 +381,7 @@ function createFinisherCard(finisher) {
       <div class="rank-badge"><span>RANK</span>${escapeHtml(finisher.rank)}</div>
       <div class="score-badge"><span>SCORE</span>${escapeHtml(finisher.score)}</div>
     </div>
-    <h3 class="finisher-name">${escapeHtml(finisher.name)}</h3>
+    <h3 class="finisher-name"><a href="#/f/${encodeURIComponent(finisher.id)}" class="finisher-link">${escapeHtml(finisher.name)}</a></h3>
     <dl class="meta-list">
       <div class="meta-row">
         <dt class="meta-label">作品</dt>
@@ -292,15 +401,28 @@ function createFinisherCard(finisher) {
       </div>
     </dl>
     <p class="description">${escapeHtml(finisher.description)}</p>
-    <div class="score-breakdown" aria-label="スコア内訳">
-      ${createScoreRow("かっこよさ", finisher.coolness_score)}
-      ${createScoreRow("衝撃", finisher.impact_score)}
-      ${createScoreRow("象徴性", finisher.iconic_score)}
+    <div class="score-panel">
+      ${createRadarChart(finisher, 120)}
+      <div class="score-breakdown" aria-label="スコア内訳">
+        ${createScoreRow("かっこよさ", finisher.coolness_score)}
+        ${createScoreRow("衝撃", finisher.impact_score)}
+        ${createScoreRow("象徴性", finisher.iconic_score)}
+      </div>
     </div>
     <div class="tags">
-      ${finisher.tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
+      ${finisher.tags.map((tag) => `<button type="button" class="tag" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`).join("")}
     </div>
   `;
+
+  article.querySelectorAll(".tag").forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.stopPropagation();
+      state.tag = btn.dataset.tag;
+      render();
+      updateHash();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
 
   return article;
 }
@@ -314,7 +436,9 @@ function createFinisherMedia(finisher) {
 
     return `
       <figure class="card-media ${mediaClass}">
-        <img src="${escapeHtml(media.url)}" alt="${escapeHtml(media.alt)}" loading="lazy">
+        <a href="#/f/${encodeURIComponent(finisher.id)}" class="media-link" aria-label="${escapeHtml(finisher.name)}の詳細を開く">
+          <img src="${escapeHtml(media.url)}" alt="${escapeHtml(media.alt)}" loading="lazy">
+        </a>
         <figcaption>
           <a href="${escapeHtml(media.source_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(creditText)}</a>
         </figcaption>
@@ -339,6 +463,209 @@ function createScoreRow(label, score) {
       <span class="score-track"><span class="score-fill" style="width: ${safeScore}%"></span></span>
       <span>${safeScore}</span>
     </div>
+  `;
+}
+
+function createRadarChart(finisher, size = 140) {
+  const cx = size / 2;
+  const cy = size / 2;
+  const radius = size / 2 - 14;
+  const axes = [
+    { key: "coolness_score", label: "COOL" },
+    { key: "impact_score", label: "IMPACT" },
+    { key: "iconic_score", label: "ICON" }
+  ];
+  const anglePoints = axes.map((_, i) => {
+    const angle = -Math.PI / 2 + (i * 2 * Math.PI) / axes.length;
+    return { angle };
+  });
+
+  const gridLevels = [0.33, 0.66, 1];
+  const gridPolys = gridLevels.map((lvl) => {
+    return anglePoints
+      .map(({ angle }) => {
+        const x = cx + Math.cos(angle) * radius * lvl;
+        const y = cy + Math.sin(angle) * radius * lvl;
+        return `${x.toFixed(1)},${y.toFixed(1)}`;
+      })
+      .join(" ");
+  });
+
+  const axisLines = anglePoints
+    .map(({ angle }) => {
+      const x = cx + Math.cos(angle) * radius;
+      const y = cy + Math.sin(angle) * radius;
+      return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" class="radar-axis"/>`;
+    })
+    .join("");
+
+  const dataPoints = axes.map((ax, i) => {
+    const val = Math.max(0, Math.min(100, Number(finisher[ax.key]) || 0));
+    const t = val / 100;
+    const { angle } = anglePoints[i];
+    const x = cx + Math.cos(angle) * radius * t;
+    const y = cy + Math.sin(angle) * radius * t;
+    return { x, y, val, label: ax.label, angle };
+  });
+
+  const dataPoly = dataPoints.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
+
+  const labels = dataPoints
+    .map((p) => {
+      const lx = cx + Math.cos(p.angle) * (radius + 10);
+      const ly = cy + Math.sin(p.angle) * (radius + 10);
+      return `<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" class="radar-label" text-anchor="middle" dominant-baseline="middle">${escapeHtml(p.label)}</text>`;
+    })
+    .join("");
+
+  const dots = dataPoints
+    .map((p) => `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="2.5" class="radar-dot"/>`)
+    .join("");
+
+  return `
+    <svg class="radar-chart" viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" aria-hidden="true">
+      ${gridPolys.map((pts) => `<polygon points="${pts}" class="radar-grid"/>`).join("")}
+      ${axisLines}
+      <polygon points="${dataPoly}" class="radar-data"/>
+      ${dots}
+      ${labels}
+    </svg>
+  `;
+}
+
+function pickRandom() {
+  const filtered = sortFinishers(getFilteredFinishers());
+  if (!filtered.length) return;
+
+  const pick = filtered[Math.floor(Math.random() * filtered.length)];
+  const card = elements.rankingList.querySelector(`[data-id="${CSS.escape(pick.id)}"]`);
+  if (!card) return;
+
+  card.scrollIntoView({ behavior: "smooth", block: "center" });
+  card.classList.remove("highlight");
+  void card.offsetWidth;
+  card.classList.add("highlight");
+  window.setTimeout(() => card.classList.remove("highlight"), 2600);
+}
+
+function renderDetail() {
+  const finisher = state.finishers.find((f) => f.id === state.detailId);
+
+  if (!finisher) {
+    elements.listView.hidden = true;
+    elements.detailView.hidden = false;
+    elements.detailView.innerHTML = `
+      <div class="detail-inner">
+        <a class="detail-back" href="#" data-back="true">← 一覧に戻る</a>
+        <p class="detail-missing">該当する技が見つかりませんでした。</p>
+      </div>
+    `;
+    return;
+  }
+
+  elements.listView.hidden = true;
+  elements.detailView.hidden = false;
+
+  const media = finisher.image || genreDefaultImages[finisher.genre];
+  const creditText = media ? [media.credit, media.license].filter(Boolean).join(" / ") : "";
+
+  const relatedSeries = state.finishers
+    .filter((f) => f.id !== finisher.id && f.series === finisher.series)
+    .slice(0, 4);
+  const relatedGenre = state.finishers
+    .filter((f) => f.id !== finisher.id && f.genre === finisher.genre && f.series !== finisher.series)
+    .slice(0, 4);
+
+  elements.detailView.innerHTML = `
+    <div class="detail-inner">
+      <a class="detail-back" href="#" data-back="true">← 一覧に戻る</a>
+
+      <div class="detail-hero">
+        ${media ? `
+          <figure class="detail-media">
+            <img src="${escapeHtml(media.url)}" alt="${escapeHtml(media.alt)}">
+            <figcaption>
+              <a href="${escapeHtml(media.source_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(creditText)}</a>
+            </figcaption>
+          </figure>
+        ` : ""}
+
+        <div class="detail-head">
+          <div class="detail-badges">
+            <div class="rank-badge"><span>RANK</span>${escapeHtml(finisher.rank)}</div>
+            <div class="score-badge"><span>SCORE</span>${escapeHtml(finisher.score)}</div>
+          </div>
+          <h2 class="detail-name">${escapeHtml(finisher.name)}</h2>
+          <dl class="meta-list detail-meta">
+            <div class="meta-row"><dt class="meta-label">作品</dt><dd>${escapeHtml(finisher.series)}</dd></div>
+            <div class="meta-row"><dt class="meta-label">使用者</dt><dd>${escapeHtml(finisher.character)}</dd></div>
+            <div class="meta-row"><dt class="meta-label">カテゴリ</dt><dd>${escapeHtml(categoryLabels[finisher.category] || finisher.category)}</dd></div>
+            <div class="meta-row"><dt class="meta-label">ジャンル</dt><dd>${escapeHtml(genreLabels[finisher.genre] || finisher.genre)}</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <p class="detail-description">${escapeHtml(finisher.description)}</p>
+
+      <div class="detail-scores">
+        ${createRadarChart(finisher, 220)}
+        <div class="score-breakdown">
+          ${createScoreRow("かっこよさ", finisher.coolness_score)}
+          ${createScoreRow("衝撃", finisher.impact_score)}
+          ${createScoreRow("象徴性", finisher.iconic_score)}
+        </div>
+      </div>
+
+      <div class="detail-tags tags">
+        ${finisher.tags.map((tag) => `<button type="button" class="tag" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`).join("")}
+      </div>
+
+      ${renderRelatedBlock("同じ作品の技", relatedSeries)}
+      ${renderRelatedBlock("同じジャンルの技", relatedGenre)}
+    </div>
+  `;
+
+  const backLink = elements.detailView.querySelector('[data-back="true"]');
+  if (backLink) {
+    backLink.addEventListener("click", (event) => {
+      if (window.history.length > 1) {
+        event.preventDefault();
+        window.history.back();
+      }
+    });
+  }
+
+  elements.detailView.querySelectorAll(".tag").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.tag = btn.dataset.tag;
+      state.detailId = null;
+      render();
+      updateHash();
+      window.scrollTo({ top: 0 });
+    });
+  });
+
+  window.scrollTo({ top: 0 });
+}
+
+function renderRelatedBlock(title, items) {
+  if (!items.length) return "";
+  return `
+    <section class="related-block">
+      <h3 class="related-title">${escapeHtml(title)}</h3>
+      <div class="related-list">
+        ${items.map((item) => `
+          <a class="related-item" href="#/f/${encodeURIComponent(item.id)}">
+            ${item.image ? `<img src="${escapeHtml(item.image.url)}" alt="${escapeHtml(item.image.alt)}" loading="lazy">` : `<div class="related-item-fallback">${escapeHtml(getGenreSymbol(item.genre))}</div>`}
+            <div class="related-item-body">
+              <span class="related-item-rank">#${escapeHtml(item.rank)}</span>
+              <span class="related-item-name">${escapeHtml(item.name)}</span>
+              <span class="related-item-series">${escapeHtml(item.series)}</span>
+            </div>
+          </a>
+        `).join("")}
+      </div>
+    </section>
   `;
 }
 

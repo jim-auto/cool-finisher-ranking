@@ -25,64 +25,75 @@
     </header>
 
     <main>
-      <section class="controls-section" aria-labelledby="controls-title">
-        <div class="section-heading">
-          <h2 id="controls-title">ランキングを探す</h2>
-          <p id="result-summary" class="result-summary">データを読み込んでいます。</p>
-        </div>
+      <div id="list-view">
+        <section class="controls-section" aria-labelledby="controls-title">
+          <div class="section-heading">
+            <h2 id="controls-title">ランキングを探す</h2>
+            <p id="result-summary" class="result-summary">データを読み込んでいます。</p>
+          </div>
 
-        <form class="controls" id="filters-form">
-          <label class="control-field" for="search-input">
-            <span>検索</span>
-            <input
-              id="search-input"
-              type="search"
-              name="search"
-              placeholder="技名・作品名・キャラ名"
-              autocomplete="off"
-            >
-          </label>
+          <form class="controls" id="filters-form">
+            <label class="control-field" for="search-input">
+              <span>検索</span>
+              <input
+                id="search-input"
+                type="search"
+                name="search"
+                placeholder="技名・作品名・キャラ名"
+                autocomplete="off"
+              >
+            </label>
 
-          <label class="control-field" for="category-filter">
-            <span>作品カテゴリ</span>
-            <select id="category-filter" name="category">
-              <option value="all">すべて</option>
-            </select>
-          </label>
+            <label class="control-field" for="category-filter">
+              <span>作品カテゴリ</span>
+              <select id="category-filter" name="category">
+                <option value="all">すべて</option>
+              </select>
+            </label>
 
-          <label class="control-field" for="genre-filter">
-            <span>ジャンル</span>
-            <select id="genre-filter" name="genre">
-              <option value="all">すべて</option>
-            </select>
-          </label>
+            <label class="control-field" for="genre-filter">
+              <span>ジャンル</span>
+              <select id="genre-filter" name="genre">
+                <option value="all">すべて</option>
+              </select>
+            </label>
 
-          <label class="control-field" for="sort-select">
-            <span>並び替え</span>
-            <select id="sort-select" name="sort">
-              <option value="score-desc">スコア高い順</option>
-              <option value="score-asc">スコア低い順</option>
-              <option value="name-asc">名前順</option>
-              <option value="rank-asc">初期順位順</option>
-            </select>
-          </label>
+            <label class="control-field" for="sort-select">
+              <span>並び替え</span>
+              <select id="sort-select" name="sort">
+                <option value="score-desc">スコア高い順</option>
+                <option value="score-asc">スコア低い順</option>
+                <option value="name-asc">名前順</option>
+                <option value="rank-asc">初期順位順</option>
+              </select>
+            </label>
 
-          <button class="reset-button" type="reset">リセット</button>
-        </form>
-      </section>
+            <button class="random-button" id="random-button" type="button">🎲 ランダム</button>
+            <button class="reset-button" type="reset">リセット</button>
+          </form>
 
-      <section class="ranking-section" aria-labelledby="ranking-title">
-        <div class="section-heading">
-          <h2 id="ranking-title">必殺技ランキング</h2>
-          <p class="ranking-note">スコアはかっこよさ・インパクト・象徴性をもとにしたMVP用の評価値です。</p>
-        </div>
+          <div class="tag-chip" id="tag-chip" hidden>
+            <span class="tag-chip-prefix">タグ絞り込み</span>
+            <span class="tag-chip-label" id="tag-chip-label"></span>
+            <button type="button" class="tag-chip-clear" id="tag-chip-clear" aria-label="タグ絞り込みを解除">×</button>
+          </div>
+        </section>
 
-        <div id="ranking-list" class="ranking-list" aria-live="polite"></div>
-        <div id="empty-state" class="empty-state" hidden>
-          <p>条件に合う必殺技が見つかりませんでした。</p>
-          <p>検索語やフィルタを少し広げてみてください。</p>
-        </div>
-      </section>
+        <section class="ranking-section" aria-labelledby="ranking-title">
+          <div class="section-heading">
+            <h2 id="ranking-title">必殺技ランキング</h2>
+            <p class="ranking-note">スコアはかっこよさ・インパクト・象徴性をもとにしたMVP用の評価値です。</p>
+          </div>
+
+          <div id="ranking-list" class="ranking-list" aria-live="polite"></div>
+          <div id="empty-state" class="empty-state" hidden>
+            <p>条件に合う必殺技が見つかりませんでした。</p>
+            <p>検索語やフィルタを少し広げてみてください。</p>
+          </div>
+        </section>
+      </div>
+
+      <section id="detail-view" class="detail-view" hidden aria-live="polite"></section>
     </main>
 
     <footer class="site-footer">
