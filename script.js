@@ -18,6 +18,65 @@ const genreLabels = {
   special: "特殊技"
 };
 
+const genreDefaultImages = {
+  beam: {
+    url: "https://images.pexels.com/photos/16587242/pexels-photo-16587242.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "光線技や気功技をイメージした稲妻の写真",
+    credit: "Laython Photos / Pexels",
+    license: "Pexels License",
+    source_url: "https://www.pexels.com/photo/lightning-on-sky-16587242/"
+  },
+  slash: {
+    url: "https://images.pexels.com/photos/29332767/pexels-photo-29332767.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "斬撃技をイメージした刀を構える武道家の写真",
+    credit: "Alireza Heidarpour / Pexels",
+    license: "Pexels License",
+    source_url: "https://www.pexels.com/photo/martial-artist-posing-with-katana-sword-indoors-29332767/"
+  },
+  punch: {
+    url: "https://images.pexels.com/photos/8810078/pexels-photo-8810078.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "パンチ技をイメージしたボクサーの練習写真",
+    credit: "Los Muertos Crew / Pexels",
+    license: "Pexels License",
+    source_url: "https://www.pexels.com/photo/a-man-punching-a-heavy-bag-8810078/"
+  },
+  kick: {
+    url: "https://images.pexels.com/photos/14796247/pexels-photo-14796247.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "キック技をイメージした格闘技トレーニングの写真",
+    credit: "Duren Williams / Pexels",
+    license: "Pexels License",
+    source_url: "https://www.pexels.com/photo/a-man-kicking-the-kick-pad-14796247/"
+  },
+  transformation: {
+    url: "https://images.pexels.com/photos/6642763/pexels-photo-6642763.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "変身や高速移動をイメージしたネオンライトの写真",
+    credit: "photoGraph / Pexels",
+    license: "Pexels License",
+    source_url: "https://www.pexels.com/photo/neon-light-trails-6642763/"
+  },
+  grappling: {
+    url: "https://images.pexels.com/photos/5424663/pexels-photo-5424663.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "組み技をイメージしたグラップリングの写真",
+    credit: "Bruno Bueno / Pexels",
+    license: "Pexels License",
+    source_url: "https://www.pexels.com/photo/fighters-grappling-in-a-ring-5424663/"
+  },
+  throw: {
+    url: "https://images.pexels.com/photos/5424663/pexels-photo-5424663.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "投げ技をイメージしたグラップリングの写真",
+    credit: "Bruno Bueno / Pexels",
+    license: "Pexels License",
+    source_url: "https://www.pexels.com/photo/fighters-grappling-in-a-ring-5424663/"
+  },
+  special: {
+    url: "https://images.pexels.com/photos/6642763/pexels-photo-6642763.jpeg?auto=compress&cs=tinysrgb&w=900",
+    alt: "特殊技をイメージしたネオンライトの写真",
+    credit: "photoGraph / Pexels",
+    license: "Pexels License",
+    source_url: "https://www.pexels.com/photo/neon-light-trails-6642763/"
+  }
+};
+
 const state = {
   finishers: [],
   searchText: "",
@@ -247,14 +306,17 @@ function createFinisherCard(finisher) {
 }
 
 function createFinisherMedia(finisher) {
-  if (finisher.image) {
-    const creditText = [finisher.image.credit, finisher.image.license].filter(Boolean).join(" / ");
+  const media = finisher.image || genreDefaultImages[finisher.genre];
+
+  if (media) {
+    const creditText = [media.credit, media.license].filter(Boolean).join(" / ");
+    const mediaClass = finisher.image ? "has-image" : "has-image default-image";
 
     return `
-      <figure class="card-media has-image">
-        <img src="${escapeHtml(finisher.image.url)}" alt="${escapeHtml(finisher.image.alt)}" loading="lazy">
+      <figure class="card-media ${mediaClass}">
+        <img src="${escapeHtml(media.url)}" alt="${escapeHtml(media.alt)}" loading="lazy">
         <figcaption>
-          <a href="${escapeHtml(finisher.image.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(creditText)}</a>
+          <a href="${escapeHtml(media.source_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(creditText)}</a>
         </figcaption>
       </figure>
     `;
